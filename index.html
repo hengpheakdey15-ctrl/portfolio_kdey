@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Heng Pheakdey — Year 4 IT Student & Junior Software Developer Portfolio" />
-  <title>Heng Pheakdey | IT Student & Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Heng Pheakdey - Year 4 IT Student and Junior Software Developer">
+  <title>Heng Pheakdey | IT Student Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="bg-grid"></div>
   <header class="navbar">
-    <a class="brand" href="#home"><span>HP</span></a>
+    <a class="logo" href="#home">HP<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
     <nav id="nav">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -22,207 +22,206 @@
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
-    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☼</button>
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
   </header>
 
   <main>
-    <section class="hero section" id="home">
-      <div class="hero-copy reveal">
-        <div class="status"><i></i> Available for opportunities</div>
+    <section id="home" class="hero section">
+      <div class="hero-text reveal">
+        <div class="availability"><span></span> Available for opportunities</div>
         <p class="eyebrow">HELLO, I'M</p>
         <h1>Heng <span>Pheakdey</span></h1>
-        <h2>IT Student <b>·</b> Junior Software Developer</h2>
-        <p class="lead">
-          Year 4 Information Technology student focused on building practical,
-          reliable software with modern web, backend, database, and networking technologies.
+        <h2>Year 4 IT Student <b>·</b> Junior Developer</h2>
+        <p class="hero-description">
+          I build practical software, web applications, databases, and network solutions.
+          I enjoy learning by creating real projects and solving technical problems.
         </p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">View My Projects <span>↗</span></a>
-          <a class="btn ghost" href="#contact">Let's Connect</a>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">View Projects ↗</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
         </div>
-        <div class="quick-tech">
+        <div class="tech-row">
           <span>Java</span><span>Spring Boot</span><span>C#</span><span>PHP</span><span>MySQL</span>
         </div>
       </div>
 
       <div class="hero-photo reveal">
-        <div class="photo-orbit"></div>
-        <div class="photo-card">
-          <img src="assets/profile.png" alt="Professional profile photo of Heng Pheakdey">
+        <div class="glow"></div>
+        <div class="photo-frame">
+          <img src="assets/profile.png" alt="Heng Pheakdey profile photo">
         </div>
-        <div class="floating-card fc-top"><strong>YEAR 4</strong><small>IT Student</small></div>
-        <div class="floating-card fc-bottom"><strong>BUILD</strong><small>Learn · Create · Improve</small></div>
+        <div class="floating-card top-card"><strong>YEAR 4</strong><small>Information Technology</small></div>
+        <div class="floating-card bottom-card"><strong>BUILD • LEARN • GROW</strong><small>Software & Technology</small></div>
       </div>
     </section>
 
-    <section class="section about" id="about">
-      <div class="section-heading reveal">
+    <section id="about" class="section">
+      <div class="section-title reveal">
         <p class="eyebrow">01 / ABOUT ME</p>
         <h2>Turning ideas into <span>working solutions.</span></h2>
       </div>
       <div class="about-grid">
-        <div class="about-text reveal">
+        <div class="about-copy reveal">
           <p>
-            I’m an Information Technology student in my fourth year, developing a strong
-            foundation in software development, databases, web technologies, and computer networking.
+            I am a fourth-year Information Technology student at
+            <strong>National University of Management</strong>.
           </p>
           <p>
-            I enjoy creating systems that solve real-world problems and learning new tools
-            through hands-on university projects. My current goal is to grow into a capable
-            software developer and contribute to professional development teams.
+            My interests include software development, backend systems, databases,
+            web development, APIs, and computer networking. I like building projects
+            that help me turn classroom knowledge into practical skills.
           </p>
           <div class="stats">
-            <div><strong>4+</strong><span>Years Learning IT</span></div>
-            <div><strong>8+</strong><span>Technologies</span></div>
-            <div><strong>5+</strong><span>Project Areas</span></div>
+            <div><strong>4</strong><small>Year IT Student</small></div>
+            <div><strong>8+</strong><small>Technologies</small></div>
+            <div><strong>5+</strong><small>Project Areas</small></div>
           </div>
         </div>
-        <div class="about-panel reveal">
-          <div class="terminal">
-            <div class="terminal-bar"><span></span><span></span><span></span><label>pheakdey@portfolio:~</label></div>
-            <div class="terminal-body">
-              <p><em>$ whoami</em></p>
-              <p>Heng Pheakdey</p>
-              <p><em>$ focus</em></p>
-              <p>Software Development</p>
-              <p>Web & Backend Systems</p>
-              <p>Databases & Networking</p>
-              <p><em>$ motivation</em></p>
-              <p>Learn something new every day.</p>
-              <span class="cursor">_</span>
-            </div>
+        <div class="terminal reveal">
+          <div class="terminal-top"><i></i><i></i><i></i><span>pheakdey@portfolio</span></div>
+          <div class="terminal-body">
+            <p><em>$ whoami</em></p>
+            <p>Heng Pheakdey</p>
+            <p><em>$ education</em></p>
+            <p>Information Technology — Year 4</p>
+            <p><em>$ focus</em></p>
+            <p>Software Development</p>
+            <p>Web & Backend</p>
+            <p>Database & Networking</p>
+            <p><em>$ goal</em></p>
+            <p>Become a professional software developer.</p>
+            <span class="cursor">▌</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="skills">
-      <div class="section-heading reveal">
+    <section id="skills" class="section">
+      <div class="section-title reveal">
         <p class="eyebrow">02 / SKILLS</p>
         <h2>My <span>technical toolkit.</span></h2>
       </div>
       <div class="skills-grid">
-        <article class="skill-card reveal">
-          <div class="skill-icon">⌘</div><h3>Programming</h3>
-          <p>Java, C#, PHP, JavaScript</p>
-          <div class="tags"><span>Java</span><span>C#</span><span>PHP</span><span>JS</span></div>
+        <article class="card reveal">
+          <div class="icon">⌘</div><h3>Programming</h3>
+          <p>Object-oriented programming and application development.</p>
+          <div class="tags"><span>Java</span><span>C#</span><span>PHP</span><span>JavaScript</span></div>
         </article>
-        <article class="skill-card reveal">
-          <div class="skill-icon">◈</div><h3>Backend</h3>
-          <p>Building APIs and server-side applications.</p>
+        <article class="card reveal">
+          <div class="icon">◈</div><h3>Backend</h3>
+          <p>Building APIs, server-side applications, and data-driven systems.</p>
           <div class="tags"><span>Spring Boot</span><span>JPA</span><span>REST API</span></div>
         </article>
-        <article class="skill-card reveal">
-          <div class="skill-icon">▣</div><h3>Database</h3>
-          <p>Designing, querying, and connecting relational databases.</p>
+        <article class="card reveal">
+          <div class="icon">▣</div><h3>Database</h3>
+          <p>Designing tables, queries, relationships, and database connections.</p>
           <div class="tags"><span>MySQL</span><span>SQL Server</span><span>H2</span></div>
         </article>
-        <article class="skill-card reveal">
-          <div class="skill-icon">⌁</div><h3>Web</h3>
-          <p>Responsive interfaces with clean, user-focused design.</p>
+        <article class="card reveal">
+          <div class="icon">⌁</div><h3>Web Development</h3>
+          <p>Responsive websites with clean layouts and interactive interfaces.</p>
           <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
         </article>
-        <article class="skill-card reveal">
-          <div class="skill-icon">◎</div><h3>Networking</h3>
-          <p>Fundamentals of IP addressing, switching, routing, and security.</p>
+        <article class="card reveal">
+          <div class="icon">◎</div><h3>Networking</h3>
+          <p>Network configuration, troubleshooting, and security fundamentals.</p>
           <div class="tags"><span>Cisco</span><span>Packet Tracer</span><span>TCP/IP</span></div>
         </article>
-        <article class="skill-card reveal">
-          <div class="skill-icon">◆</div><h3>Tools</h3>
-          <p>Development and testing tools used for academic projects.</p>
+        <article class="card reveal">
+          <div class="icon">◆</div><h3>Tools</h3>
+          <p>Tools I use for development, testing, version control, and study.</p>
           <div class="tags"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Postman</span></div>
         </article>
       </div>
     </section>
 
-    <section class="section projects" id="projects">
-      <div class="section-heading reveal">
+    <section id="projects" class="section">
+      <div class="section-title reveal">
         <p class="eyebrow">03 / PROJECTS</p>
-        <h2>Things I've <span>built & explored.</span></h2>
+        <h2>What I've <span>built & explored.</span></h2>
       </div>
-      <div class="project-list">
-        <article class="project-card featured reveal">
-          <div class="project-number">01</div>
-          <div class="project-info">
-            <span class="project-type">FULL-STACK / UNIVERSITY PROJECT</span>
+      <div class="projects">
+        <article class="project featured reveal">
+          <div class="number">01</div>
+          <div>
+            <small>UNIVERSITY / BACKEND</small>
             <h3>Library Book Management</h3>
-            <p>A practical management system for organizing books and library operations, built around a Java Spring Boot backend and relational database concepts.</p>
+            <p>Library management system using Java Spring Boot, JPA, REST API concepts and a relational database.</p>
             <div class="tags"><span>Java</span><span>Spring Boot</span><span>JPA</span><span>MySQL</span><span>REST API</span></div>
           </div>
-          <div class="project-art art-library"><div class="book"></div><div class="book"></div><div class="book"></div></div>
         </article>
-        <article class="project-card reveal">
-          <div class="project-number">02</div>
-          <div class="project-info">
-            <span class="project-type">DESKTOP APPLICATION</span>
+        <article class="project reveal">
+          <div class="number">02</div>
+          <div>
+            <small>DESKTOP APPLICATION</small>
             <h3>Banking Service System</h3>
-            <p>A C# Windows Forms project focused on user interfaces, data handling, and core banking-service workflows.</p>
+            <p>C# Windows Forms application focused on interfaces, data handling and banking workflows.</p>
             <div class="tags"><span>C#</span><span>Windows Forms</span><span>SQL</span></div>
           </div>
-          <div class="project-art art-bank"><div class="chart"></div></div>
         </article>
-        <article class="project-card reveal">
-          <div class="project-number">03</div>
-          <div class="project-info">
-            <span class="project-type">DATABASE / MANAGEMENT</span>
+        <article class="project reveal">
+          <div class="number">03</div>
+          <div>
+            <small>DATABASE / WEB</small>
             <h3>Mini Mart Management</h3>
-            <p>Database-oriented system concepts for products, inventory, sales, and store operations.</p>
-            <div class="tags"><span>SQL</span><span>MySQL</span><span>PHP</span></div>
+            <p>Management-system concepts for products, inventory, sales, and store operations.</p>
+            <div class="tags"><span>PHP</span><span>MySQL</span><span>SQL</span></div>
           </div>
-          <div class="project-art art-store"><div class="shelf"></div><div class="shelf"></div></div>
         </article>
-        <article class="project-card reveal">
-          <div class="project-number">04</div>
-          <div class="project-info">
-            <span class="project-type">NETWORKING</span>
+        <article class="project reveal">
+          <div class="number">04</div>
+          <div>
+            <small>NETWORKING</small>
             <h3>Cisco Network Labs</h3>
-            <p>Hands-on practice with IP configuration, ping tests, VLANs, switching, routing concepts, and port security.</p>
-            <div class="tags"><span>Cisco</span><span>Packet Tracer</span><span>Networking</span></div>
+            <p>Hands-on practice with IP addressing, ping, VLANs, switching, routing and port security.</p>
+            <div class="tags"><span>Cisco</span><span>Packet Tracer</span><span>TCP/IP</span></div>
           </div>
-          <div class="project-art art-network"><div class="node n1"></div><div class="node n2"></div><div class="node n3"></div><div class="line l1"></div><div class="line l2"></div></div>
         </article>
       </div>
     </section>
 
-    <section class="section education" id="education">
-      <div class="section-heading reveal">
+    <section id="education" class="section">
+      <div class="section-title reveal">
         <p class="eyebrow">04 / EDUCATION</p>
         <h2>My learning <span>journey.</span></h2>
       </div>
       <div class="timeline reveal">
         <div class="timeline-item">
-          <div class="dot"></div>
-          <div><span class="date">CURRENT</span><h3>National University of Management</h3><p>Bachelor-level Information Technology studies · Year 4</p></div>
+          <span class="dot"></span>
+          <div><small>CURRENT</small><h3>National University of Management</h3><p>Information Technology — Year 4</p></div>
         </div>
         <div class="timeline-item">
-          <div class="dot"></div>
-          <div><span class="date">ONGOING LEARNING</span><h3>Programming & Software Development</h3><p>Java, Spring Boot, C#, PHP, databases, APIs, and software project development.</p></div>
+          <span class="dot"></span>
+          <div><small>ONGOING</small><h3>Software Development</h3><p>Java, Spring Boot, C#, PHP, JavaScript, APIs and application development.</p></div>
         </div>
         <div class="timeline-item">
-          <div class="dot"></div>
-          <div><span class="date">ONGOING LEARNING</span><h3>Networking & Security Fundamentals</h3><p>Network components, IP addressing, Cisco Packet Tracer, troubleshooting, and security fundamentals.</p></div>
+          <span class="dot"></span>
+          <div><small>ONGOING</small><h3>Networking & Security</h3><p>IP addressing, Cisco Packet Tracer, switching, routing and security fundamentals.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section contact" id="contact">
+    <section id="contact" class="section contact">
       <div class="contact-box reveal">
         <div>
           <p class="eyebrow">05 / CONTACT</p>
           <h2>Let's build something <span>useful.</span></h2>
-          <p class="lead">Interested in working together, discussing a project, or sharing an opportunity? Send me a message.</p>
+          <p class="hero-description">Replace the email and social links below with your real accounts before publishing.</p>
         </div>
         <div class="contact-links">
-          <a href="mailto:your.email@example.com"><small>EMAIL</small><strong>your.email@example.com ↗</strong></a>
-          <a href="https://github.com/" target="_blank" rel="noopener"><small>GITHUB</small><strong>github.com/yourusername ↗</strong></a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><small>LINKEDIN</small><strong>linkedin.com/in/yourusername ↗</strong></a>
+          <a href="mailto:YOUR_EMAIL@example.com"><small>EMAIL</small><strong>YOUR_EMAIL@example.com ↗</strong></a>
+          <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener"><small>GITHUB</small><strong>github.com/YOUR_USERNAME ↗</strong></a>
+          <a href="https://www.linkedin.com/in/YOUR_USERNAME/" target="_blank" rel="noopener"><small>LINKEDIN</small><strong>linkedin.com/in/YOUR_USERNAME ↗</strong></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer><span>© <span id="year"></span> Heng Pheakdey</span><span>Designed & built with HTML · CSS · JavaScript</span></footer>
+  <footer>
+    <span>© <span id="year"></span> Heng Pheakdey</span>
+    <span>HTML • CSS • JavaScript</span>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
